@@ -32,7 +32,7 @@ p {
 }
 
 /* responsive design */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
     .nav-bar {
         /* position: fixed; */
         height: 54px;
