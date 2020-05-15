@@ -25,6 +25,11 @@ p {
 }
 
 /* class styles */
+.attribution {
+    text-decoration: none;
+    font-weight: bold;
+    color: mistyrose;
+}
 .nav-bar {
     /* position: fixed; */
     height: 54px;
@@ -69,12 +74,18 @@ p {
     color: rgba(108, 80, 93, 1);
 }
 .home-section {
+    background-image: url(../images/space.jpg);
+    background-size: cover;
     text-align: right;
     height: 100%;
     display: grid;
     grid-template-areas:
         "cy-name     cy-dp"
         "tag-line    cy-dp";
+}
+.about-section {
+    height: 100%;
+    text-align: justify;
 }
 
 /* id styles */
@@ -100,9 +111,9 @@ p {
 }
 
 /* responsive design */
-/* @media screen and (max-width: 600px) {
+/* @media screen and (min-width: 600px) {
     ul.nav-list {
-        flex-direction: column;
+        flex-direction: row;
     }
     ul.nav-list .nav-item {
         border-top: 1px solid white;
