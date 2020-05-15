@@ -30,89 +30,93 @@ p {
     font-weight: bold;
     color: mistyrose;
 }
-.nav-bar {
-    /* position: fixed; */
-    height: 54px;
-    width: 100%;
-    background-color: rgba(108, 80, 93, 1);
-    padding-left: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: large;
-    position: fixed;
-}
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-.site-logo {
-    display: inline-block;
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: larger;
-    font-weight: bold;
-    font-family: monospace;
-}
-.site-logo:hover {
-    color: lightblue;
-}
-.site-logo img {
-    vertical-align: middle;
-}
-.nav-item .btn {
-    list-style: none;
-    line-height: 34px;
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-}
-.nav-item .btn:hover {
-    background-color: rgb(253, 235, 243);
-    color: rgba(108, 80, 93, 1);
-}
-.home-section {
-    background-image: url(../images/space.jpg);
-    background-size: cover;
-    text-align: right;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-        "cy-name     cy-dp"
-        "tag-line    cy-dp";
-}
-.about-section {
-    height: 100%;
-    text-align: justify;
-}
-
-/* id styles */
-#cy-name {
-    grid-area: cy-name;
-    font-size: 56px;
-    place-self: end end;
-    padding-bottom: 32px;
-    padding-right: 82px;
-}
-#tag-line {
-    grid-area: tag-line;
-    font-size: 32px;
-    place-self: start end;
-    padding-top: 32px;
-    padding-right: 82px;
-}
-#cy-dp {
-    grid-area: cy-dp;
-    place-self: center start;
-    padding-left: 80px;
-    border-left: 2px solid whitesmoke;
-}
 
 /* responsive design */
-/* @media screen and (min-width: 600px) {
-    ul.nav-list {
+@media screen and (min-width: 600px) {
+    .nav-bar {
+        /* position: fixed; */
+        height: 54px;
+        width: 100%;
+        background-color: rgba(108, 80, 93, 1);
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: large;
+        position: fixed;
+    }
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+    .site-logo {
+        display: inline-block;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: larger;
+        font-weight: bold;
+        font-family: monospace;
+    }
+    .site-logo:hover {
+        color: lightblue;
+    }
+    .site-logo img {
+        vertical-align: middle;
+    }
+    .nav-item .btn {
+        list-style: none;
+        line-height: 34px;
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+    .nav-item .btn:hover {
+        background-color: rgb(253, 235, 243);
+        color: rgba(108, 80, 93, 1);
+    }
+    .home-section {
+        background-image: url(../images/space.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: right;
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            "cy-name     cy-dp"
+            "tag-line    cy-dp";
+    }
+    .about-section {
+        height: 100%;
+        text-align: justify;
+    }
+
+    /* id styles */
+    #cy-name {
+        grid-area: cy-name;
+        font-size: 56px;
+        place-self: end end;
+        padding-bottom: 32px;
+        padding-right: 82px;
+    }
+    #tag-line {
+        grid-area: tag-line;
+        font-size: 32px;
+        place-self: start end;
+        padding-top: 32px;
+        padding-right: 82px;
+    }
+    #cy-dp {
+        grid-area: cy-dp;
+        place-self: center start;
+        padding-left: 80px;
+        border-left: 2px solid whitesmoke;
+    }
+
+    /* ul.nav-list {
         flex-direction: row;
     }
     ul.nav-list .nav-item {
@@ -126,5 +130,5 @@ p {
     ul.nav-list .nav-item:last-child {
         border-bottom: 1px solid white;
         border-left: none;
-    }
-} */
+    } */
+}
