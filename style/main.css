@@ -25,10 +25,22 @@ p {
 }
 
 /* class styles */
-.attribution {
+.site-logo {
+    width: 100%;
+    background-color: rgb(108, 80, 93);
+    padding: 5px 0;
+    display: inline-block;
     text-decoration: none;
+    color: whitesmoke;
+    font-size: larger;
     font-weight: bold;
-    color: mistyrose;
+    font-family: monospace;
+}
+.site-logo:hover {
+    color: lightblue;
+}
+.site-logo img {
+    vertical-align: middle;
 }
 .nav-bar {
     background-color: rgb(108, 80, 93);
@@ -60,22 +72,10 @@ p {
     background-color: rgb(253, 235, 243);
     color: rgba(108, 80, 93, 1);
 }
-.site-logo {
-    width: 100%;
-    background-color: rgb(108, 80, 93);
-    padding: 5px 0;
-    display: inline-block;
+.attribution {
     text-decoration: none;
-    color: whitesmoke;
-    font-size: larger;
     font-weight: bold;
-    font-family: monospace;
-}
-.site-logo:hover {
-    color: lightblue;
-}
-.site-logo img {
-    vertical-align: middle;
+    color: mistyrose;
 }
 .home-section {
     background-image: url(../images/space.jpg);
