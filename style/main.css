@@ -59,7 +59,7 @@ p {
     justify-content: center;
 }
 .nav-item .btn {
-    width: auto;
+    width: 33.33%;
     list-style: none;
     line-height: 34px;
     display: inline-block;
