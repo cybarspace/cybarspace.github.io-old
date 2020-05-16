@@ -30,11 +30,15 @@ p {
     font-weight: bold;
     color: mistyrose;
 }
-
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 48;
+}
 /* responsive design */
 @media screen and (min-width: 720px) {
     .nav-bar {
-        /* position: fixed; */
         height: 54px;
         width: 100%;
         background-color: rgba(108, 80, 93, 1);
@@ -44,6 +48,7 @@ p {
         align-items: center;
         font-size: large;
         position: fixed;
+        top: 0;
     }
     .nav-list {
         list-style: none;
