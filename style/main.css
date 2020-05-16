@@ -1,8 +1,9 @@
 /* element styles */
 html {
     box-sizing: border-box;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    margin: 0;
 }
 *,
 *::before,
@@ -14,10 +15,10 @@ html {
 body {
     background-color: rgb(46, 37, 41);
     color: white;
-    margin: auto;
+    margin: 0;
     text-align: center;
     font-family: monospace;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 p {
@@ -29,9 +30,10 @@ p {
 /* class styles */
 .site-logo {
     width: 100%;
+    position: fixed;
     background-color: rgb(108, 80, 93);
     padding: 5px 0;
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: whitesmoke;
     font-size: larger;
@@ -83,10 +85,11 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-areas:
         "cy-name"
+        "cy-dp"
         "cy-dp"
         "tag-line";
 }
@@ -99,21 +102,22 @@ p {
 #cy-name {
     grid-area: cy-name;
     font-size: 56px;
-    place-self: center center;
+    place-self: end center;
     padding-bottom: 32px;
     padding-right: 82px;
+    text-align: center;
 }
 #tag-line {
     grid-area: tag-line;
     font-size: 32px;
-    place-self: center center;
+    place-self: start center;
     padding-top: 32px;
     padding-right: 82px;
     text-align: right;
 }
 #cy-dp {
     width: 50%;
-    height: 50%;
+    height: 92%;
     grid-area: cy-dp;
     place-self: center center;
 }
