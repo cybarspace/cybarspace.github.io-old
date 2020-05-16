@@ -31,28 +31,98 @@ p {
     color: mistyrose;
 }
 .nav-bar {
+    background-color: rgb(108, 80, 93);
+    height: 48px;
+    width: 100%;
+    display: block;
+    align-items: center;
+    font-size: large;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 48;
 }
+.nav-list {
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+}
+.nav-item .btn {
+    width: auto;
+    list-style: none;
+    line-height: 34px;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.nav-item .btn:hover {
+    background-color: rgb(253, 235, 243);
+    color: rgba(108, 80, 93, 1);
+}
+.site-logo {
+    width: 100%;
+    background-color: rgb(108, 80, 93);
+    padding: 5px 0;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bold;
+    font-family: monospace;
+}
+.site-logo:hover {
+    color: lightblue;
+}
+.site-logo img {
+    vertical-align: middle;
+}
+.home-section {
+    background-image: url(../images/space.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "cy-name     cy-dp"
+        "tag-line    cy-dp";
+}
+.about-section {
+    height: 100%;
+    text-align: justify;
+}
+
+/* id styles */
+#cy-name {
+    grid-area: cy-name;
+    font-size: 56px;
+    place-self: end end;
+    padding-bottom: 32px;
+    padding-right: 82px;
+}
+#tag-line {
+    grid-area: tag-line;
+    font-size: 32px;
+    place-self: start end;
+    padding-top: 32px;
+    padding-right: 82px;
+}
+#cy-dp {
+    grid-area: cy-dp;
+    place-self: center start;
+    padding-left: 80px;
+    border-left: 2px solid whitesmoke;
+}
+
 /* responsive design */
 @media screen and (min-width: 720px) {
     .nav-bar {
-        height: 54px;
-        width: 100%;
-        background-color: rgba(108, 80, 93, 1);
-        padding-left: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: large;
-        position: fixed;
         top: 0;
-    }
-    .nav-list {
-        list-style: none;
-        display: flex;
+        height: 54px;
+        /* padding-left: 10px; */
     }
     .site-logo {
         display: inline-block;
@@ -79,7 +149,7 @@ p {
     }
     .nav-item .btn:hover {
         background-color: rgb(253, 235, 243);
-        color: rgba(108, 80, 93, 1);
+        color: rgb(108, 80, 93);
     }
     .home-section {
         background-image: url(../images/space.jpg);
