@@ -116,9 +116,9 @@ p {
     text-align: right;
 }
 #cy-dp {
+    grid-area: cy-dp;
     width: 50%;
     height: 92%;
-    grid-area: cy-dp;
     place-self: center center;
 }
 
